@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+   <div id="container">
+        <div id="wrapper">
+            <form>
+                <input type="text" id="header">
+            </form>
+            <div class="div">
+                <div class="one"> 
+                    <table>
+                        <tr>
+                            <td><button class="action" data-num="7" onclick="display('7')">7</button></td><td><button class="action" data-num="8" onclick="display('8')">8</button></td><td><button class="action" data-num="9" onclick="display('9')">9</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="action" data-num="4" onclick="display('4')">4</button></td><td><button class="action" data-num="5" onclick="display('5')">5</button></td><td><button class="action" data-num="6" onclick="display('6')">6</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="action" data-num="1" onclick="display('1')">1</button></td><td><button class="action" data-num="2" onclick="display('2')">2</button></td><td><button class="action" data-num="3" onclick="display('3')">3</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="action" data-num="." onclick="display('.')">.</button></td><td><button class="action" data-num="0" onclick="display('0')">0</button></td><td><button class="btn3 equal" data-num="=" onclick="calc()">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="two"> 
+                    <table>
+                        <tr>
+                            <td><button class="btn2 del" onclick="clean()">del</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2 action" data-num="/" onclick="display('/')">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2 action" data-num="*" onclick="display('*')">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2 action" data-num="-" onclick="display('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2 action" data-num="+" onclick="display('+')">+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="three"> 
+
+                </div>
+            </div>
+        </div>
+        <!-- working on the cover of the calculator which will be opened and closed onclick -->
+        <div class="boltone"></div>
+        <div class="bolttwo"></div>
+        <div class="boltthree"></div>
+        <div class="boltfour"></div>
+        <div class="cover" id="cover"></div>
+        <button id="mybtnnn">click to flip</button>
+        <button id="mybtnn">click to flip</button>
+        <div id="first">Hunray's calculator</div>
+   </div>
+   <script src="calculator.js"></script>
+</body>
+</html>

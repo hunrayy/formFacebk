@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="php.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="myform">
+           <p>Please fill the form below to register for this course</p>
+            <hr>
+            <div class="inputs">
+                <label for="">First name<sup>*</sup></label><br>
+                <input type="text" placeholder="Your first name" class="input"><br>
+
+                <label for="">Last name<sup>*</sup></label><br>
+                <input type="text" placeholder="Your Last name" class="input"><br>
+
+                <label for="">Email <sup>*</sup></label><br>
+                <input type="email" placeholder="your email address" class="input"><br>
+
+                <label for="">phone <sup>*</sup></label><br>
+                <input type="number" placeholder="your phone number" class="input"><br>
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10">tell us about your self</textarea>
+            <button>continue &rarr;</button>
+        </div>
+        <header>
+            <div class="h1">
+                <figure>
+                    <img src="C:\Users\HP\Desktop\assignments\cyclobold site\images\logo.png" width="50vw" height="50vh">
+                    <figcaption>Cyclobold</figcaption>
+                </figure>
+                <p id="courses">courses &dtri;</p>
+                <p>Resources &dtri;</p>
+                <!-- <p><a href="C:\Users\HP\Desktop\assignments\facebook\facebook.html">click to go to facebook</a></p> -->
+            </div>
+            <div class="h2">
+                <form action="#" method="post">
+                    <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type ="search" placeholder="  what do you want to learn ? " class="firstbtn" >
+                    
+                    
+                </form>
+                <button class="login">Log in</button>
+                <button class="cu">Contact Us</button>
+                <!-- <i class="fa-sharp fa-solid fa-bars" id="menu"></i> -->
+            </div>
+            <span id="menubar">|||</span><span id="closebar">x</span>   
+        </header>
+        <div id="menucontent">
+            <p class="men">Courses &dtri;</p>
+            <p class="men">Resources &dtri;</p>
+            <p class="men">Contact Us</p>
+            <p class="men">Log in</p>
+            <form action="#" method="post" class="formone2">
+                <!-- <button> <i class="fa-solid fa-magnifying-glass"></i></button> -->
+                &#128269;<input type ="search" placeholder="  what do you want to learn ? " class="men2" >
+            </form>   
+        </div>
+
+
+
+
+
+        <div id="div1">
+            <div class="text">
+                <p class="p">Apply for <u>PHP and Full stack web development</u></p>
+                <p class="p2">Learn to build a complete web application with PHP programming language and Laravel framework</p>
+            </div>
+            <img src="C:\Users\HP\Desktop\assignments\cyclobold site\images\tenth.png" alt="my img" class="phpimg">
+        </div>
+        <img src="C:\Users\HP\Desktop\assignments\cyclobold site\images\first.png" alt="" class="bgimg">
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="f1">
+                    <p class="cyclobold">Cyclobold <span>RC 1734836</span></p>
+                    <p>
+                        Cyclobold Technology limited is a registered company in Nigeria with a coporate Affairs
+                        commission Registration number RC 1734836.
+                    </p><br>
+                    <p>
+                        Here are the values that define us: intensive training, competitiveness, competence, mastery and 
+                        delivery.
+                    </p>
+            </div>
+            <div class="f2">
+                <p class="wdu">
+                    What Drives Us
+                </p>
+                <p>
+                    <b>Our Mission</b> is to produce software 
+                    engineers that are confident to handle any
+                    given project in any given capacity, at any
+                    time.
+                </p>
+            </div>
+            <div class="f3">
+                <p class="cs">
+                    case studies
+                    Associates
+                    Legal & privacy
+                </p>
+            </div>
+        </div>
+        <div class="fline"></div>
+        <div class="footer2">
+            <div>
+                <p class="ql">Quick Links</p>
+                <ul type="none">
+                    <li><a href="">Brochure</a></li>
+                    <li><a href="">Internship</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Online Learning</a></li>
+                </ul>
+            </div>
+            <div class="ql">
+                Trending Courses 2021
+            </div>
+            <div>
+                <p class="ql">Social</p>
+                <ul type="none">
+                    <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="C:\Users\HP\Desktop\assignments\facebook\facebook.html">click to go to facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    stay in the know
+                </p>
+                <form action="#">
+                    <input type ="email" class="formmm" placeholder="Your Email address"> &nbsp;<button class="subscribe">subscribe</button>
+                </form>
+                <p class="ql">Location</p>
+                <p>2, Oweh street, Jibowu, Yaba, Lagos State.</p>
+                <p class="ql">Email</p>
+                <p>info@cyclobold.com</p>
+                <p class="ql">Call Us</p>
+                <p>08108227646</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector("#menubar").addEventListener("click", ()=>{
+            document.querySelector("#menucontent").style.animationName = "menubar"
+            document.querySelector("#menucontent").style.top = "10vh";
+            document.querySelector("#menubar").style.display = "none"
+            document.querySelector("#closebar").style.display = "block"
+        })
+        document.querySelector("#closebar").addEventListener("click", ()=>{
+            document.querySelector("#menucontent").style.animationName = "closebar"
+            document.querySelector("#menucontent").style.top = "-50vh";
+            document.querySelector("#menubar").style.display = "block"
+            document.querySelector("#closebar").style.display = "none"
+            setTimeout(() => {
+                location.reload()
+            }, 500);
+
+           
+        //    setTimeout(reload(), 10)
+        //    function reload() {
+        //        location.reload()
+        //     }
+        })
+        
+    </script>
+</body>
+</html>

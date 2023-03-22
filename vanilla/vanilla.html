@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vanilla</title>
+    <link rel="stylesheet" href="vanilla.css">
+    <style>
+        #btn2{
+            width: 50px;
+            height: 50px;
+            margin-left: 55%;
+            color: red;
+            font-size: 30px;
+            background-color: rgba(0, 0, 255, 0);
+            border-color: rgba(255, 0, 0, 0);
+        }
+        #ul{
+            visibility: hidden;
+            color: white;
+            font-size: 1.5vw;
+            font-family: cursive;
+            animation-name: animate;
+            animation-duration: 4s;
+        }
+        @keyframes animate {
+            from{
+                top: -300px;
+            }
+            to{
+                top: 0%;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        /* #henry{
+            background-color: green;
+            width: 10vw;
+            height: 30vh;
+        } */
+        #box{
+            background-color: blue;
+            width: 10vw;
+            height: 15vh;
+            position: absolute;
+            top: 33vh;
+            left: 87vw;
+            visibility: hidden;
+        }
+        #label{
+            cursor: pointer;
+        }
+        #label:hover{
+            color: red;
+        }
+        #box >button{
+            height: 5vh;
+            margin-left: 1vw;
+            margin-top: 2vh;
+            font-family: cursive;
+            font-weight: bold;
+            cursor: pointer;
+            width: 8vw;
+        }
+        #point{
+            font-size: large;
+            color: greenyellow;
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgba(0, 0, 0, 0);
+            width: 3vw;
+            height: 3vh;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="container">
+        <div id="henry">
+            <div class="menu">
+                <button id="btn"><span>M</span>ENU <span>B</span>AR</button><br>
+                <ul type="none" id="ul">
+                    <button id="btn2">X</button><br>
+                    <span id="span"></span>
+                    <li><a href="">home</a></li>
+                    <li><a href="">service</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><label id="label">theme</label><button id="point">=></button></li>
+                </ul>
+            </div>
+            <div id="box">
+                <button id="lt">light theme</button>
+                <button id="dt">default theme</button>
+            </div>
+        </div>
+        <div class="vanilla">
+            <p><span>V</span>A<span>N</span>ILLA</p>
+            <form action="#" method="post">
+                <input type ="search" placeholder="search vanilla or enter url" class="f">
+            </form>
+        </div>
+        <!-- <div class="div2">
+            <div>
+
+            </div>
+            
+        </div> -->
+        <script src="vanilla.js"></script>
+    </div>
+   
+</body>
+</html>

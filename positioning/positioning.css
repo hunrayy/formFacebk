@@ -1,0 +1,81 @@
+/* *{
+    margin: 0;
+}
+#wrapper{
+    height: 100vh;
+    position: relative;
+}
+section{
+    border: .1em dotted red;
+}
+.center{
+    position: absolute;
+    left: auto;
+    right: 45%;
+    z-index: -1;
+} */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    background: linear-gradient(to right, grey 30%, white 70%);
+    mix-blend-mode: saturation;
+}
+#container{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    mix-blend-mode: hard-light;
+}
+header{
+    background-color: rgb(134, 117, 117);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: .5em;
+}
+#content, main{
+    position: relative;
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    /* width: 100%; */
+    width: 100%;
+    left: 0;
+    /* height: 80vh; */
+}
+aside{
+    height: 100vh;
+    border: .1em solid red;
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}
+#content{
+    border: 1em ridge purple;
+    height: 100vh;
+}
+section{
+    height: 45vh;
+    border: .1em double green;
+    margin: 1em;
+}
+article{
+    height: 45vh;
+    border: .1em ridge grey;
+    margin: 1em;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav ul li:nth-child(2){
+    background-color: black;
+    color: aliceblue;
+}

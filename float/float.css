@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+figure{
+    flex: 1;
+}
+header{
+    border: 3px solid black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    align-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+     flex: 2;
+    /* background-color: red; */
+}
+.none{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 2em; 
+    font-size: larger;
+} 
+header>nav>ul>li a{
+    text-decoration: none;
+    /* width: 40%; */
+}
+.myul{
+    text-decoration: none;
+    padding-left: 3em;
+}
+.box{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+}
+.div1{
+    border: 3px solid yellow;
+    width: 200px;
+    /* height: 550px; */
+    background-color: rgb(43, 32, 32);
+    color: white;
+}
+.mylist{
+    display: flex;
+    flex-direction: column;
+}
+.div2{
+    border: 3px solid purple;
+    width: 755px;
+    /* line-height: 30px; */
+    box-sizing: border-box;
+    background-color: rgb(255, 210, 126);
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+/* .prosidebar{
+    margin: 10px;
+    padding: 10px;
+} */
+.features{
+    padding: 20px;
+    text-shadow: 20px 10px rgb(139, 0, 0) ;
+}
+.myul2{
+    padding-left: 3em;
+}
+button{
+    border-radius: 5px 5px 5px 5px;
+}
+button:hover{
+    background-color: rgb(124, 59, 59);
+}
+.div3{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    /* bottom: 500px; */
+    /* float: left; */
+    /* background-color: brown; */
+    width :30%;
+    height: 89.5vh;
+    background-color: rgb(43, 32, 32);
+}
+footer{
+    border: 3px solid black;
+    height: 45px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+marquee{
+    background-color: orange;
+    color: white;
+}
+.footerul{
+    display: flex;
+    color: white;
+    font-size: larger;
+    gap: 2em;
+    align-items: center;
+    align-content: space-between;
+}
+.img1{
+    border: 1px solid blue;
+    border-radius: 50%;
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header{
+    /* background-color: aqua; */
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    gap: 18em;
+    padding-left: 3em;
+    align-items: center;
+    font-size: 2vw;
+    animation-name: fine;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.year{
+    padding-left: 2vw;
+}
+/* .days{
+    display: flex;
+    gap: 11em;
+    padding-left: 6em;
+    background-color: grey;
+    height: 7vh;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    gap: 11em;
+    padding-left: 8vw;
+} */
+table{
+    text-align: center;
+    width: 100%;
+    /* background-color: grey; */
+}
+td{
+    padding: 1.5vw;
+}
+thead{
+    background-image: radial-gradient(green,blue);
+    height: 10Vh;
+
+}
+.bad:hover{
+    background-color: grey;
+}
+@keyframes fine{
+    0%{background-color: aqua;}
+    50%{background-color: red;}
+    75%{background-color: yellow;}
+    100%{background-color: aqua;}
+    
+}
